@@ -1,0 +1,8 @@
+exec mongod.cfg
+systemLog:
+    destination: file
+    path: c:\data\log\mongod.log
+storage:
+    dbPath: c:\data\db
+security:
+  authorization: enabled
