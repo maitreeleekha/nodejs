@@ -46,10 +46,9 @@ app.get('/profile',(req,res)=>{
 
 //before pushing check for the incoming data.
 app.post('/profile',(req,res)=>{
-  /*  if(!req.body.fname || !req.body.lname){
+   if(!req.body.fname.trim() || !req.body.lname.trim()){
         return res.sendStatus(404);
-    }*/
-    console.log(req.body.fname);
+    }
    
     //filtering the incoming data to only what is required and removing the junk data.
     let shortPro={

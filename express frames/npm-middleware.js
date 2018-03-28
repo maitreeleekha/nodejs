@@ -7,6 +7,7 @@ const app = express();
 
 //use npm middleware
 app.use(bodyParser.json());
+//morgan used for logging details
 app.use(morgan('dev'));
 
 app.get('/',(req,res)=>{
